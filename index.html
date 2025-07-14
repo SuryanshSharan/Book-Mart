@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+   
+    <style>
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            
+        }
+
+        header {
+            background-color: #333;
+            text-align: center;
+            padding: 1em 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+           
+            font-size: 24px;
+            letter-spacing: 2px;
+            animation: slideIn 1s ease-out;
+        }
+        .container{
+            display: flex;
+            color: #3498db;
+            gap: 10%;
+        }
+        .container h1{
+            font-size: 125px;
+            margin-left: 70px;
+        }
+        .container h2{
+            font-size: 40px;
+            margin-left: 70px;
+        }
+        .container img{
+            margin-right: 70px;
+        }
+
+        
+
+        .auth-buttons {
+            display: flex;
+        }
+
+        .auth-buttons button {
+            margin-left: 10px;
+            padding: 8px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .auth-buttons button:hover {
+            background-color: #fff;
+            color: #3498db;
+        }
+
+
+
+       
+
+      
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: auto;
+        }
+
+        
+        .slider-container {
+            flex-grow: 1;
+            overflow: hidden;
+        }
+
+        .slider {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .aos{
+            text-decoration: none; 
+            text-decoration-color: none; 
+            color: inherit;
+        }
+        .right-side{
+            margin-right: 30px;
+            margin-top: 20px;
+        }
+        .left-side{
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our BookMart</h1>
+        <div class="auth-buttons">
+            <button><a class="aos" href="./sign.html">Sign In</a></button>
+            <button><a class="aos" href="./login.html">Log In</a></button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="left-side">
+            <h1>Get Upto 20% off </h1>
+            <h2>on your first order</h2>
+        </div>
+        <div class="right-side">
+            <img src="./image/buk.avif" alt="" width="500px">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Bookstore. All rights reserved.</p>
+    </footer>
+</body>
+</html>
